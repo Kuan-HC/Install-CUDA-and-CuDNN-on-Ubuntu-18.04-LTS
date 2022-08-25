@@ -55,8 +55,6 @@ export PATH=$PATH:/usr/local/cuda-xx.x/bin
 <img src="img/6.png" width = "600">
 
 
-https://developer.nvidia.com/rdp/cudnn-download
-
 <h2 id="3"> Install cuDNN </h2> 
 
 安裝 Zlib
@@ -80,8 +78,9 @@ sudo chmod a+r /usr/local/cuda-X.Y/include/cudnn*.h /usr/local/cuda-X.Y/lib64/li
 
 
 <b>Note:</b>以前的版本可以用以下指令查看 (25th Aug 2022)
-> cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2
-目前的版本中為此資訊
+> cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2  
+
+目前的版本中無此資訊
 
 <h2 id="4"> Install Nvidia Driver </h2>
 https://pytorch.org/get-started/locally/  
@@ -97,8 +96,8 @@ x = torch.rand(2, 3)
 
 print(x)
 ```
+會產生隨機的 2x3 張量如下：
 
-隨機的 2x3 張量，類似如下：
 <img src="img/9.png" width = "600">
 
 測試pytorch GPU
