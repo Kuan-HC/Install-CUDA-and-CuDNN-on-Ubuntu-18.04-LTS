@@ -71,9 +71,11 @@ https://developer.nvidia.com/rdp/cudnn-download
 > tar -xvf cudnn-linux-x86_64-8.x.x.x_cudaX.Y-archive.tar.xz  
 
 將檔案複製至本地cuda
-> sudo cp cudnn-*-archive/include/cudnn*.h /usr/local/cuda-X.Y/include     
+```
+sudo cp cudnn-*-archive/include/cudnn*.h /usr/local/cuda-X.Y/include     
 sudo cp -P cudnn-*-archive/lib/libcudnn* /usr/local/cuda-X.Y/lib64  
 sudo chmod a+r /usr/local/cuda-X.Y/include/cudnn*.h /usr/local/cuda-X.Y/lib64/libcudnn*
+```
 
 
 
@@ -83,9 +85,11 @@ sudo chmod a+r /usr/local/cuda-X.Y/include/cudnn*.h /usr/local/cuda-X.Y/lib64/li
 目前的版本中無此資訊
 
 <h2 id="4"> Install Nvidia Driver </h2>
+
 https://pytorch.org/get-started/locally/  
 
 選擇要安裝的檔案，依照提非安裝
+
 <img src="img/8.png" width = "600">
 
 驗證 PyTorch，在終端輸入以下指令
